@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" media=""
+</head>
+
+<body>
+    <div class="campo">
+        <h1 id="titulo">Cadastro de Desenvolvedor</h1>
+        <p id="subtitulo"><strong>Preencha o formulário abaixo:</strong></p>
+    </div>
+<form>
+<fieldset class="grupo"> 
+        <div class="campo">
+            <label for="nome completo"><strong>Nome completo:</strong></label>
+            <input type="text" name="nome" id="nome" required>
+        </div>
+</fieldset>
+        <div class="campo">
+            <label for="email"><strong>Email:</strong></label>
+            <input type="email" name="Email" id="Email" required>
+    
+            <legend class="campo"><strong>Crie uma senha:</strong></legend>
+            <label for="senha"></label>
+            <input type="password" name="senha" size="30" maxlength="8" required/>
+
+            <legend class="campo"><strong>Corfirme senha:</strong></legend>
+            <label for="senha"></label>
+            <input type="password" name="senha" size="30" maxlength="8" required/>
+        </div>
+
+        <div class="campo">
+            <legend><strong>Sexo:</strong></legend>
+            <label for="sexo"></label>
+            feminino<input type="radio" name="sexo" value="feminino">
+            masculino<input type="radio" name="sexo" value="masculino">
+            outro<input type="radio" name="sexo" value="outro">
+        </div>
+
+        <div class="campo">
+            <legend><strong>Endereço:</strong></legend>
+            <label for="endereco"></label>
+        </div>
+
+        <div class="campo">
+            <input type="text" name="nome" size="30"/>
+            <legend for="cidade"><strong>Cidade:</strong></legend>
+            <label for="nome"></label>
+            <input type="text" name="nome" size="30"/>
+            <br><br>
+        </div>
+
+        <div class="campo">
+            <legend for="estado"><strong>Estado</strong></legend>
+            <select id="Estado:">
+            <option selected disabled value="">selecione</option>
+            <option value="AC">AC</option>
+            <option value="AL">AL</option>
+            <option value="AM">AM</option>
+            <option value="AP">AP</option>
+            <option value="DF">DF</option>
+            <option value="ES">ES</option>
+            <option value="GO">GO</option>
+            <option value="MA">MA</option>
+            <option value="MG">MG</option>
+            <option value="MS">MS</option>
+            <option value="MT">MT</option>
+            <option value="PA">PA</option>
+            <option value="PB">PB</option>
+            <option value="PE">PE</option>
+            <option value="PI">PI</option>
+            <option value="PR">PR</option>
+            <option value="RJ">RJ</option>
+            <option value="RN">RN</option>
+            <option value="RO">RO</option>
+            <option value="RR">RR</option>
+            <option value="RS">RS</option>
+            <option value="SC">SC</option>
+            <option value="SE">SE</option>
+            <option value="SP">SP</option>
+            <option value="TO">TO</option>
+            
+        </div> 
+
+        <div class="campo">
+            </select>
+                <legend><strong>De qual lado da aplicação você desenvolve:</strong></legend>
+                <label for="sexo"></label>
+                Front-end<input type="radio" name="Devweb" value="frontend" checked> 
+                Back-end<input type="radio" name="Devweb" value="backend">
+                Fullstack<input type="radio" name="Devweb" value="fullstack">
+        </div>   
+   
+        <div class="campo">
+            <legend for="Senioridade"><strong>Senioridade:</strong></legend>
+            <select id="Senioridade:">
+            <option selected disabled value="">selecione</option>
+            <option>Júnior</option>
+            <option>Pleno</option>
+            <option>Senior</option>
+            </select> 
+        </div>
+
+<fieldset class="grupo">
+        <div id="check">
+            <legend><strong>Selecione as tecnologias que utiliza:</strong></legend>
+            <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML"/>
+            <label for="tecnolia1">HTML</label>
+            <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS"/>
+            <label for="tecnolia2">CSS</label>
+            <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Java Script"/>
+            <label for="tecnolia3">Java Script</label>
+            <input type="checkbox" id="tecnologia4" name="tecnologia4" value="Java"/>
+            <label for="tecnolia4">Java</label>
+            <input type="checkbox" id="tecnologia5" name="tecnologia5" value="Python"/><br>
+            <label for="tecnolia5">Python</label>
+            <input type="checkbox" id="tecnologia6" name="tecnologia6" value="PHP"/>
+            <label for="tecnolia6">PHP</label>
+            <input type="checkbox" id="tecnologia7" name="tecnologia7" value="C#"/>
+            <label for="tecnolia7">C#</label>
+            <input type="checkbox" id="tecnologia8" name="tecnologia8" value="CQL"/>
+            <label for="tecnolia8">CQL</label>
+            <input type="checkbox" id="tecnologia9" name="tecnologia9" value="Swift"/>
+            <label for="tecnolia9">Swift</label>
+            <input type="checkbox" id="tecnologia10" name="tecnologia10" value="Go"/>
+            <label for="tecnolia10">Go</label>
+            <input type="checkbox" id="tecnologia11" name="tecnologia11" value="Ruby"/>
+            <label for="tecnolia11">Ruby</label>
+
+        </div>
+</fieldset>
+    
+        <div class="campo">
+            <legend><strong>Conte um pouco da sua experiência como programador:</strong></legend>
+            <label for="comentario"></label>
+            <textarea style="width:26" name="experiencia" cols="30" rows="6" id="experiencia"></textarea><br>
+            <input class="botao" type="reset" name="enviar" value="Limpar"/>
+            <input class="botao" type="button" name="enviar" value="Enviar Formulário"/>
+        </div>
+
+
+</form>
+
+<form method="post" action="processa.html"> 
+
+</body>
+</html>
+
+
+
+
+
